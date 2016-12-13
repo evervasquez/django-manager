@@ -14,9 +14,10 @@ Quick start
         'manager',
     ]
 
-2. Incluir en tu settings ::
+2. Incluir en tu settings
 
+```sh
 AUTH_USER_MODEL = 'manager.Users'
-
+```
 
 3. Run `python manage.py migrate`
