@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_manager.egg-info/PKG-INFO
+django_manager.egg-info/SOURCES.txt
+django_manager.egg-info/dependency_links.txt
+django_manager.egg-info/top_level.txt
