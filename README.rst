@@ -1,11 +1,8 @@
 =====
-Manager
+djando-manager
 =====
 
-Polls is a simple Django app to conduct Web-based polls. For each
-question, visitors can choose between a fixed number of answers.
-
-Detailed documentation is in the "docs" directory.
+Aplicación para cambiar los persmisos a modulos.
 
 Quick start
 -----------
@@ -14,11 +11,17 @@ Quick start
 
     INSTALLED_APPS = [
         ...
-        'polls',
+        'manager',
     ]
-
+   
 2. Incluir en tu settings
 
-```sh
+```
+
 AUTH_USER_MODEL = 'manager.Users'
+
+AUTHENTICATION_BACKENDS = (
+    'manager.backends.ModelBackend',
+    )
+    
 ```
