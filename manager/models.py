@@ -365,9 +365,10 @@ class Users(AbstractBaseUser, PermissionsMixins):
 
 
 class Modules(TimeStampedModel):
+    app_label = models.CharField(max_length=30, null=True)
     name = models.CharField(max_length=30)
     url = models.CharField(max_length=50)
-    icon = models.CharField(max_length=10, null=True, blank=True)
+    icon = models.CharField(max_length=30, null=True, blank=True)
     order = models.PositiveSmallIntegerField(default=0)
     partner = models.ForeignKey('self', null=True, blank=True)
 

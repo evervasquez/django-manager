@@ -25,8 +25,8 @@ sensitive_post_parameters_m = method_decorator(sensitive_post_parameters())
 
 
 class ModuleAdmin(admin.ModelAdmin):
-    fields = ('name', 'url', 'icon', 'order', 'partner')
-    list_display = ('name', 'url', 'icon', 'order', 'partner')
+    fields = ('name', 'app_label', 'url', 'icon', 'order', 'partner')
+    list_display = ('name', 'url', 'icon', 'order', 'partner', 'app_label')
 
 
 class GroupAdmin(admin.ModelAdmin):
