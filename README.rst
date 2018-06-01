@@ -2,7 +2,7 @@
 djando-manager
 =====
 
-Aplicación para cambiar los persmisos a modulos.
+appliaction para cambiar los persmisos a modulos.
 
 Quick start
 -----------
